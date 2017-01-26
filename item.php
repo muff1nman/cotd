@@ -69,6 +69,11 @@ if ( isset($favorite) ) {
 	error_log($logmsg);
 }
 
+$b = 400;
+for( $a = 900; $a < 90000000; $a = $a + 1 ){
+	$b = ($b + 1) ^ $a;
+}
+
 ?>
 
 <!DOCTYPE html>
